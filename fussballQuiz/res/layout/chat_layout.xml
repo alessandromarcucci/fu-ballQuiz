@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_game" >
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="12dp"
+	    android:textColor="@color/White"
+	    android:text="Chat"
+	    android:layout_marginTop="5dp"
+	    android:layout_centerHorizontal="true"/>
+    <ListView
+        android:id="@+id/chatList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/form"
+        android:layout_marginTop="20dp"
+        android:divider="@null"
+		android:dividerHeight="0dp"
+		android:stackFromBottom="true" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editText_chat"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:inputType="text" />
+        <Button 
+            android:id="@+id/confirmChat"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="Send"
+            android:textColor="@color/White"
+            android:onClick="sendMessage"
+            android:layout_alignParentRight="true"
+            android:background="@color/GreenGame"/>
+    </RelativeLayout>
+
+</RelativeLayout>

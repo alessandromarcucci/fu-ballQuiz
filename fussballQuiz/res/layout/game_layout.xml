@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_game" >
+	
+    
+    
+    	
+    	
+    	
+    	
+    	<RelativeLayout
+            android:layout_width="fill_parent"
+        	android:layout_height="70dp"
+        	android:layout_marginTop="5dp"
+        	android:layout_centerHorizontal="true"
+        	android:orientation="horizontal">
+        	<!-- first player -->
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+            <ImageView
+                android:id="@+id/avatar_circle"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/avatar_circle"
+                
+                />
+            <ImageView
+                android:id="@+id/game_sender_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/player_image"/>
+            
+            
+            <ImageView 
+                android:id="@+id/game_sender_fb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="40dp"
+            />
+            <RelativeLayout
+                android:id="@+id/levelContainer"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/red_circle"
+                >
+            	<TextView
+                	android:id="@+id/game_sender_level"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:textSize="10dp"
+                	android:textColor="@color/White"
+                	android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="-10dp"
+                >
+                
+                <TextView 
+                    android:id="@+id/game_sender_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:textColor="@color/White"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true" 
+                    />
+                <TextView 
+                    android:id="@+id/game_sender_club"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="9dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/White"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true" />
+                
+                
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/versus"
+    	    android:layout_width="15dp"
+    	    android:layout_height="50dp"
+    	    android:background="@drawable/versus"
+    	    android:layout_centerHorizontal="true"/>
+            
+            <!-- second player -->
+    	
+    	
+    	
+    	
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@+id/versus"
+                android:layout_marginLeft="10dp"
+                >
+            <ImageView
+                android:id="@+id/avatar_circle"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/avatar_circle"
+                
+                />
+            <ImageView
+                android:id="@+id/game_receiver_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/player_image"/>
+            
+            
+            <ImageView 
+                android:id="@+id/game_receiver_fb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="40dp"
+            />
+            <RelativeLayout
+                android:id="@+id/levelContainer"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/red_circle"
+                >
+            	<TextView
+                	android:id="@+id/game_receiver_level"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:textSize="10dp"
+                	android:textColor="@color/White"
+                	android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="-10dp"
+                >
+                
+                <TextView 
+                    android:id="@+id/game_receiver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:textColor="@color/White"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true" 
+                    />
+                <TextView 
+                    android:id="@+id/game_receiver_club"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="9dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/White"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true" />
+                
+                
+                </RelativeLayout>
+            </RelativeLayout>
+        
+    		
+    	
+    	
+    	
+    	
+    	
+    	
+    </RelativeLayout>
+    
+    <RelativeLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="150dp"
+        >
+    	<Button
+    	    android:id="@+id/game_firstRound"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="70dp"
+    	    android:background="@drawable/btn_round_active"
+    	    android:onClick="startMatch"
+    	    android:textColor="@color/White"
+    	    android:textSize="20dp"
+    	    android:text="Erste Runde"
+    	    android:gravity="center"
+    	    />
+    	<RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="5dp"
+	        android:layout_centerVertical="true"
+	        >
+	        
+	        	<ImageView
+	        	    android:id="@+id/question1_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="50dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question2_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="70dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question3_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="90dp"/>
+	        	
+	        	
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question1_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="210dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question2_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="230dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question3_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="250dp"/>
+	        	 	
+	    </RelativeLayout>
+    	</RelativeLayout>
+    	
+    	<RelativeLayout
+            android:layout_width="fill_parent"
+        	android:layout_height="70dp"
+        	android:layout_marginLeft="20dp"
+        	android:layout_marginRight="20dp"
+        	android:layout_marginTop="220dp"
+        >
+    	<Button
+    	    android:id="@+id/game_secondRound"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="70dp"
+    	    android:background="@drawable/btn_round_active"
+    	    android:onClick="startMatch"
+    	    android:textColor="@color/White"
+    	    android:textSize="20dp"
+    	    android:text="Zweite Runde"
+    	    android:gravity="center"/>
+    		<RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="5dp"
+	        android:layout_centerVertical="true"
+	        >
+	        
+	        	<ImageView
+	        	    android:id="@+id/question4_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="50dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question5_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="70dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question6_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="90dp"/>
+	        	
+	        	
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question4_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="210dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question5_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="230dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question6_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="250dp"/>
+	        	 	
+	    </RelativeLayout>
+    	</RelativeLayout>
+    	
+    	
+    	<RelativeLayout
+    	    android:layout_width="fill_parent"
+        	android:layout_height="70dp"
+        	android:layout_marginLeft="20dp"
+        	android:layout_marginRight="20dp"
+        	android:layout_marginTop="290dp">
+    	<Button
+    	    android:id="@+id/game_thirdRound"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="70dp"
+    	    android:background="@drawable/btn_round_active"
+    	    android:onClick="startMatch"
+    	    android:textColor="@color/White"
+    	    android:textSize="20dp"
+    	    android:text="Dritte Runde"
+    	    android:gravity="center"/>
+    	<RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="5dp"
+	        android:layout_centerVertical="true"
+	        >
+	        
+	        	<ImageView
+	        	    android:id="@+id/question7_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="50dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question8_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="70dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question9_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="90dp"/>
+	        	
+	        	
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question7_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="210dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question8_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="230dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question9_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="250dp"/>
+	        	 	
+	    </RelativeLayout>
+    	</RelativeLayout>
+    	
+    	
+    	<RelativeLayout
+    	    android:layout_width="fill_parent"
+        	android:layout_height="70dp"
+        	android:layout_marginLeft="20dp"
+        	android:layout_marginRight="20dp"
+        	android:layout_marginTop="360dp">
+    	<Button
+    	    android:id="@+id/game_fourthRound"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="70dp"
+    	    
+    	    android:background="@drawable/btn_round_active"
+    	    android:onClick="startMatch"
+    	    android:textColor="@color/White"
+    	    android:textSize="20dp"
+    	    android:text="Vierte Runde"
+    	    android:gravity="center"/>
+    	
+    	<RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="5dp"
+	        android:layout_centerVertical="true"
+	        >
+	        
+	        	<ImageView
+	        	    android:id="@+id/question10_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="50dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question11_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="70dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question12_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="90dp"/>
+	        	
+	        	
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question10_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="210dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question11_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="230dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question12_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="250dp"/>
+	        	 	
+	    </RelativeLayout>
+    	</RelativeLayout>
+    	
+    	
+    	<RelativeLayout
+    	    android:layout_width="fill_parent"
+        	android:layout_height="70dp"
+        	android:layout_marginLeft="20dp"
+        	android:layout_marginRight="20dp"
+        	android:layout_marginTop="430dp">
+    	<Button
+    	    android:id="@+id/game_fifthRound"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="70dp"
+    	    
+    	    android:background="@drawable/btn_round_active"
+    	    android:onClick="startMatch"
+    	    android:textColor="@color/White"
+    	    android:textSize="20dp"
+    	    android:text="Letzte Runde"
+    	    android:gravity="center"/>
+    	<RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="5dp"
+	        android:layout_centerVertical="true"
+	        >
+	        
+	        	<ImageView
+	        	    android:id="@+id/question13_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="50dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question14_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="70dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question15_send"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="90dp"/>
+	        	
+	        	
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question13_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="210dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question14_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="230dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question15_rec"
+	        	    android:layout_width="10dp"
+	        	    android:layout_height="10dp"
+	        	    android:layout_marginLeft="250dp"/>
+	        	 	
+	    </RelativeLayout>
+    </RelativeLayout>
+    
+	<!--  
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_marginLeft="20dp"
+	    >
+    	
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="30dp">
+	        
+	        	<ImageView
+	        	    android:id="@+id/question1_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question2_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question3_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question1_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question2_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question3_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	 	
+	    </RelativeLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="15dp">
+	        
+	        	<ImageView
+	        	    android:id="@+id/question4_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question5_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question6_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<TextView 
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:textSize="15dp"
+	        	    android:textColor="@color/White" 
+					android:text="ROUND 2"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question4_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question5_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question6_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	 	
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="15dp">
+	        
+	        	<ImageView
+	        	    android:id="@+id/question7_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question8_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question9_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<TextView 
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:textSize="15dp"
+	        	    android:textColor="@color/White" 
+					android:text="ROUND 3"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question7_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question8_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question9_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	 	
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="15dp">
+	        
+	        	<ImageView
+	        	    android:id="@+id/question10_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question11_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question12_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<TextView 
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:textSize="15dp"
+	        	    android:textColor="@color/White" 
+					android:text="ROUND 4"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question10_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question11_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question12_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	 	
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="15dp">
+	        
+	        	<ImageView
+	        	    android:id="@+id/question13_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question14_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question15_send"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<TextView 
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:textSize="15dp"
+	        	    android:textColor="@color/White" 
+					android:text="ROUND 5"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question13_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question14_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	
+	        	<ImageView
+	        	    android:id="@+id/question15_rec"
+	        	    android:layout_width="40dp"
+	        	    android:layout_height="40dp"/>
+	        	 	
+	    </LinearLayout>
+	    
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	    >
+	        
+	    <Button
+	       
+	        android:id="@+id/concedeGame"
+	        android:layout_height="40dp" 
+	        android:layout_width="150dp"
+	        android:layout_marginTop="20dp"
+	        android:textColor="@color/White"
+	        android:textSize="10sp"
+	        android:layout_centerHorizontal="true"
+	        android:background="@color/Red"
+	        android:text="Concede Game"
+	        android:onClick="concedeGame"/>
+	    
+        </RelativeLayout>
+        
+	    
+	    
+	    
+	    
+	</LinearLayout>
+	<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="-70dp"
+            android:background="@color/White">
+        <Button
+            android:id="@+id/startMatch"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            
+            android:drawablePadding="10dip"
+            
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/Black"
+            android:textSize="8dip" 
+            android:onClick="startMatch"
+            />
+
+        
+
+        
+    </RelativeLayout>!-->
+
+</RelativeLayout>

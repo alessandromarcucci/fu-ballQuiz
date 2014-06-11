@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/transparent" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+    
+    	<TextView
+    	    android:id="@+id/ranking_title"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="@color/White"
+        	android:textSize="12dp"
+        	android:text="Ranking"
+        	android:layout_centerHorizontal="true"/>
+    	
+    	<TextView 
+    	    android:id="@+id/statsRank"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:textSize="9dp"
+    	    android:textColor="@color/White"
+    	    android:text="#253"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginTop="20dp"/>
+    	
+    	<RelativeLayout
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="20dp"
+    	    android:orientation="horizontal"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginTop="35dp">
+    	    <TextView
+    	        android:id="@+id/bestRanking"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:textSize="17dp"
+    	        android:textColor="@color/White"
+    	        android:text="Best Ranking: "
+    	        />
+    	    <TextView 
+    	        android:id="@+id/rankBest"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_toRightOf="@+id/bestRanking"
+    	        android:textSize="17dp"
+    	        android:textColor="@color/White"
+    	        android:text="#221"/>
+    	    </RelativeLayout>
+    	    
+    		<LinearLayout 
+        		android:layout_width="fill_parent"
+        		android:layout_height="200dp"
+        		android:layout_marginLeft="20dp"
+        		android:layout_marginRight="20dp"
+        		android:layout_marginTop="120dp"
+        		android:id="@+id/Chart_layout"
+        		android:orientation="vertical"
+        		android:layout_centerHorizontal="true"/>
+    		
+    		<RelativeLayout
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="20dp"
+    		    android:gravity="center"
+    		    android:orientation="horizontal"
+    		    android:layout_marginTop="310dp">
+    	    
+    		<TextView
+    		    android:id="@+id/rankingin"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:textSize="12dp"
+    		    android:textColor="@color/White"
+    		    android:text="Ranking in: "/>
+    	    
+    		<TextView
+    		    android:id="@+id/rankingDate"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_toRightOf="@+id/rankingin"
+    		    android:textSize="12dp"
+    		    android:textColor="@color/White"
+    		    android:text="{Date}"/>
+    		</RelativeLayout>
+	</RelativeLayout>
+</LinearLayout>

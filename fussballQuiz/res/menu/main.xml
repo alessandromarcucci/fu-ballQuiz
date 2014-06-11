@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_settings"
+          android:title="PREMIUM"
+          android:icon="@drawable/premium"
+          android:showAsAction="never" 
+          android:state_activated="true" android:state_focused="false"/>
+    <item android:id="@+id/action_settings"
+          android:title="Matches"
+          android:showAsAction="never" />
+    <item android:id="@+id/action_settings"
+          android:title="Stats"
+          android:showAsAction="never" />
+    <item android:id="@+id/action_settings"
+          android:title="Options"
+          android:showAsAction="never" />
+</menu>
+

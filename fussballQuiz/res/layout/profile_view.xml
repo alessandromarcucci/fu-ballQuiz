@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:background="@drawable/back_game">
+		
+    	<LinearLayout 
+        
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	>
+			
+			<ImageView
+        		android:id="@+id/search_searchuser"
+        		android:layout_width="60dp"
+        		android:layout_height="60dp"
+        		android:layout_marginTop="10dp"
+        		android:layout_marginLeft="10dp" />
+
+    		<LinearLayout
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"
+        		android:layout_alignParentTop="true"
+        		android:orientation="vertical"
+        		android:layout_marginTop="10dp"
+        		android:layout_marginLeft="10dp"
+        		 >
+
+    		    <TextView
+            		android:id="@+id/search_pointsuser"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_marginTop="2dp"
+            		android:paddingLeft="5dp"
+            		android:textColor="@color/White"
+            		android:textSize="12sp" />
+        	
+        		<TextView
+            		android:id="@+id/search_nameuser"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:paddingLeft="5dp"
+            		android:textColor="@color/White"
+            		android:textSize="12sp" />
+
+        		<Button
+            		android:id="@+id/search_addfriend"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_marginTop="5dp"
+            		android:paddingLeft="5dp"
+            		android:textColor="@color/White"
+            		android:textSize="12sp"
+            		android:text="@string/addfriend"
+            		android:onClick="addFriend" />
+    		</LinearLayout>
+    		
+    		<ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:background="@drawable/logo"
+                android:layout_marginLeft="60dip"
+                android:layout_marginTop="20dp" />
+    		
+			</LinearLayout>
+			
+    		
+			
+    		<ScrollView 
+				android:id="@+id/ScrollProfile"
+				android:layout_width="fill_parent"
+				android:layout_height="400dp">
+    			
+    			<LinearLayout
+    		    	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_marginTop="30dp"
+                	android:orientation="vertical">
+    		
+    				<TextView
+    		    		android:id="@+id/statsprofile" 
+    		    		android:layout_width="wrap_content"
+    		    		android:layout_height="wrap_content"
+    		    		android:text="@string/stats"
+    		    		android:textColor="@color/White"
+    		    		android:textSize="15dp"
+    		    		android:layout_marginLeft="15dp"/>
+				
+					<LinearLayout
+    		    		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:orientation="horizontal"
+                		android:layout_marginLeft="40dp">
+
+    					<Spinner
+    				    	android:id="@+id/spinner2"
+    				    	android:layout_width="160dp"
+    				    	android:layout_height="wrap_content"
+    				    	android:entries="@array/time"
+    				    	android:prompt="@string/alltime"
+    				    	android:singleLine="true"
+    				    	android:text="@string/alltime"
+    				    	android:textColor="#808080"
+    				    	android:textSize="18sp" />
+
+    					<Spinner
+    				    	android:id="@+id/spinner1"
+    				    	android:layout_width="match_parent"
+    				    	android:layout_height="wrap_content"
+    				    	android:entries="@array/clubs"
+    				    	android:prompt="@string/allclubs"
+    				    	android:singleLine="true"
+    				    	android:text="@string/allclubs"
+    				    	android:textColor="#808080"
+    				    	android:textSize="18sp" />
+
+					</LinearLayout>
+    			
+    				<LinearLayout 
+    		    		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+               	 		android:layout_marginTop="20dp" 
+    		    		android:orientation="horizontal"
+    		    		android:layout_marginLeft="10dp">
+    					<!-- GRAPHIC 1 -->
+    					
+    					<LinearLayout
+    				    	android:layout_width="wrap_content"
+    				    	android:layout_height="wrap_content"
+    				    	android:orientation="vertical"
+    				    	android:layout_marginLeft="20dp">
+    						
+    						<TextView
+    					    	android:layout_width="wrap_content"
+    					    	android:layout_height="wrap_content"
+    					    	android:text="graphic1"/>
+    						
+    						<LinearLayout 
+    		    				android:id="@+id/firstgraph"
+                				android:layout_width="150dp"
+                				android:layout_height="150dp"
+               	 				android:orientation="horizontal"
+    		    				android:layout_marginTop="10dp">
+    						</LinearLayout>
+    					</LinearLayout>
+					
+						<!-- GRAPHIC 2 -->
+						
+						<LinearLayout
+					    	android:layout_width="wrap_content" 
+					    	android:layout_height="wrap_content" 
+					    	android:orientation="vertical">
+    					
+    						<TextView
+    					    	android:layout_width="wrap_content"
+    					    	android:layout_height="wrap_content"
+    					    	android:text="graphic2"/>
+							
+							<LinearLayout 
+    		    				android:id="@+id/secondgraph"
+                				android:layout_width="150dp"
+                				android:layout_height="150dp"
+                				android:layout_marginTop="10dp" 
+                				android:orientation="horizontal"
+    		    			>
+    						</LinearLayout>
+    					</LinearLayout>
+					</LinearLayout>
+			
+					<LinearLayout 
+    		    		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+               	 		android:layout_marginTop="20dp" 
+    		    		android:orientation="horizontal"
+    		    		android:layout_marginLeft="10dp">
+    					
+    					<!-- GRAPHIC 3 -->
+    					<LinearLayout
+    				    	android:layout_width="wrap_content"
+    				    	android:layout_height="wrap_content"
+    				    	android:orientation="vertical"
+    				    	android:layout_marginLeft="20dp">
+    						
+    						<TextView
+    					    	android:layout_width="wrap_content"
+    					    	android:layout_height="wrap_content"
+    					    	android:text="graphic3"/>
+    						
+    						<LinearLayout 
+    		    				android:id="@+id/thirdgraph"
+                				android:layout_width="150dp"
+                				android:layout_height="150dp"
+               	 				android:orientation="horizontal"
+    		    				android:layout_marginTop="10dp">
+    						</LinearLayout>
+    					</LinearLayout>
+					
+						<!-- GRAPHIC 4 -->
+						<LinearLayout
+						    android:layout_width="wrap_content" 
+					    	android:layout_height="wrap_content" 
+					    	android:orientation="vertical">
+    					
+    						<TextView
+    					    	android:layout_width="wrap_content"
+    					    	android:layout_height="wrap_content"
+    					    	android:text="graphic4"/>
+						
+							<LinearLayout 
+    		    				android:id="@+id/fourthgraph"
+                				android:layout_width="150dp"
+                				android:layout_height="150dp"
+                				android:layout_marginTop="10dp" 
+                				android:orientation="horizontal"
+    		    			>
+    						</LinearLayout>
+    					</LinearLayout>
+					</LinearLayout>
+					
+					<LinearLayout 
+    		    		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+               	 		android:layout_marginTop="20dp" 
+    		    		android:orientation="horizontal"
+    		    		android:layout_marginLeft="10dp">
+    					
+    					<!-- GRAPHIC 5 -->
+    					<LinearLayout
+    				    	android:layout_width="wrap_content"
+    				    	android:layout_height="wrap_content"
+    				    	android:orientation="vertical"
+    				    	android:layout_marginLeft="20dp">
+    						
+    						<TextView
+    					    	android:layout_width="wrap_content"
+    					    	android:layout_height="wrap_content"
+    					    	android:text="graphic5"/>
+    						
+    						<LinearLayout 
+    		    				android:id="@+id/fifthgraph"
+                				android:layout_width="150dp"
+                				android:layout_height="150dp"
+               	 				android:orientation="horizontal"
+    		    				android:layout_marginTop="10dp">
+    						</LinearLayout>
+    					</LinearLayout>
+					
+						<!-- GRAPHIC 6 -->
+						<LinearLayout
+						    android:layout_width="wrap_content" 
+					    	android:layout_height="wrap_content" 
+					    	android:orientation="vertical">
+    					
+    						<TextView
+    					    	android:layout_width="wrap_content"
+    					    	android:layout_height="wrap_content"
+    					    	android:text="graphic6"/>
+						
+							<LinearLayout 
+    		    				android:id="@+id/sixthgraph"
+                				android:layout_width="150dp"
+                				android:layout_height="150dp"
+                				android:layout_marginTop="10dp" 
+                				android:orientation="horizontal"
+    		    			>
+    						</LinearLayout>
+    					</LinearLayout>
+					</LinearLayout>
+				
+				</LinearLayout>
+			</ScrollView>
+			
+			
+			<LinearLayout
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="90dp"
+	    		android:orientation="horizontal">
+
+				<Button
+            		android:id="@+id/newgame"
+            		android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:drawablePadding="10dip"
+            		android:gravity="top|center_horizontal"
+            		android:textColor="@color/White"
+            		android:textSize="12dip"
+            		android:text="@string/play"
+            		android:layout_marginTop="15dp"
+            		android:paddingTop="-20dp"
+            		android:onClick="play"/>
+		</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_game" 
+    >
+
+    
+         
+        <ListView android:id="@+id/clubList"
+              android:layout_height="500dp"
+              android:layout_width="fill_parent"/>
+<!--  <RelativeLayout
+    android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            >
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Categories"
+                android:textColor="@color/Black"
+                android:textSize="16dp" />
+            <RadioGroup 
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:checkedButton="@+id/radioAllCategories"
+				android:id="@+id/radiogroupCategories">
+            <RadioButton
+                android:id="@+id/radioAllCategories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="40dp"
+                android:text="All Categories" />
+            <RadioButton
+                android:id="@+id/radioBundesliga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="31dp"
+                
+                android:text="Bundesliga" />
+            <RadioButton
+                android:id="@+id/radioForeign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="31dp"
+                
+                android:text="Foreign Leagues" />
+			<RadioButton
+                android:id="@+id/radioEuropean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="31dp"
+                
+                android:text="European Leagues" />
+			<RadioButton
+                android:id="@+id/radioNational"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="31dp"
+               
+                android:text="National Teams" />
+			<RadioButton
+                android:id="@+id/radioEuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="31dp"
+                
+                android:text="Euro / World Cup" />
+			<RadioButton
+                android:id="@+id/radioMiscellaneous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="31dp"
+                
+                android:text="Miscellaneous" />
+			
+			<RadioButton
+                	android:id="@+id/radioFanBattle"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_alignParentLeft="true"
+                	android:layout_below="@+id/textView2"
+                	
+                	android:layout_marginLeft="31dp"
+                	
+                	android:text="Fan Battle" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:orientation="horizontal" >
+				
+                <Spinner
+                    android:id="@+id/spinnerClub"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    
+                    android:entries="@array/time"
+                    android:prompt="@string/alltime"
+                    android:singleLine="true"
+                    android:text="@string/alltime"
+                    android:textColor="#808080" />
+            </RelativeLayout>
+
+            </RadioGroup>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/White"
+            android:orientation="vertical" 
+            android:layout_marginTop="300dp">
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Difficulty"
+                android:textColor="@color/Black"
+                android:textSize="16dp" />
+            <RadioGroup 
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:checkedButton="@+id/radioNormal"
+				
+				android:id="@+id/radiogroupDifficulty">
+            <RadioButton
+                android:id="@+id/radioEasy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="40dp"
+                android:text="Easy" />
+            <RadioButton
+                android:id="@+id/radioNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="31dp"
+                
+                android:text="Normal" />
+			<RadioButton
+                android:id="@+id/radioHard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="31dp"
+                
+                android:text="Hard" />
+			</RadioGroup>
+            </RelativeLayout>
+        </RelativeLayout>!-->
+    
+
+    
+
+</RelativeLayout>

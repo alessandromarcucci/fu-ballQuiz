@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back_game"
+    android:orientation="vertical" >
+    <!-- create the filters bar -->
+    <RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="35dp"
+		    android:orientation="horizontal"
+		    android:background="@color/Blue"
+		    >
+		    <RelativeLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:orientation="horizontal"
+		        android:layout_centerHorizontal="true">
+		    	<Button 
+		        	
+		        	android:layout_width="20dp"
+		        	android:layout_height="20dp"
+		        	android:background="@drawable/allespieleoff"
+		        	android:layout_marginTop="5dp"
+		        	android:layout_marginBottom="10dp"/>
+		    	<ImageView
+		    	    android:layout_marginLeft="25dp"
+		    	    android:layout_width="10dp"
+		    	    android:layout_height="wrap_content"/>
+		    	<Button 
+		    	    android:layout_width="20dp"
+		    	    android:layout_height="20dp"
+		    	    android:layout_marginLeft="35dp"
+		    	    android:background="@drawable/active"
+		    	    android:layout_marginTop="5dp"
+		        	android:layout_marginBottom="10dp"/>
+		    	<ImageView
+		    	    android:layout_marginLeft="60dp"
+		    	    android:layout_width="10dp"
+		    	    android:layout_height="wrap_content"/>
+		    	<Button 
+		    	    android:layout_width="20dp"
+		    	    android:layout_height="20dp"
+		    	    android:layout_marginLeft="70dp"
+		    	    android:background="@drawable/clessidra"
+		    	    android:layout_marginTop="5dp"
+		        	android:layout_marginBottom="10dp"/>
+		    	<ImageView
+		    	    android:layout_marginLeft="95dp"
+		    	    android:layout_width="10dp"
+		    	    android:layout_height="wrap_content"/>
+		    	<Button 
+		    	    android:layout_width="20dp"
+		    	    android:layout_height="20dp"
+		    	    android:layout_marginLeft="105dp"
+		    	    android:background="@drawable/finishedoff"
+		    	    android:layout_marginTop="5dp"
+		        	android:layout_marginBottom="10dp"/>
+		    	<ImageView
+		    	    android:layout_marginLeft="130dp"
+		    	    android:layout_width="10dp"
+		    	    android:layout_height="wrap_content"/>
+		    	<Button 
+		    	    android:layout_width="20dp"
+		    	    android:layout_height="20dp"
+		    	    android:layout_marginLeft="140dp"
+		    	    android:background="@drawable/invitationoff"
+		    	    android:layout_marginTop="5dp"
+		        	android:layout_marginBottom="10dp"/>
+		    	    
+		    	    
+		    </RelativeLayout>
+	</RelativeLayout>
+   <!-- ************************* -->
+   
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="40dp"
+       android:layout_centerHorizontal="true"
+       android:text="Alle Spiele"
+       android:textColor="@color/White"/>
+   
+   <RelativeLayout
+        android:layout_height="80dp"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="30dp"
+        
+        android:layout_centerHorizontal="true"
+        
+        android:background="@color/transparent" 
+        android:orientation="horizontal">
+		
+		
+		<Button 
+		    android:id="@+id/startNewGame"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginRight="40dp"
+		    android:layout_marginLeft="40dp"
+		    android:layout_marginTop="30dp"
+		    android:background="@color/Orange"
+		    
+		    
+		    android:textSize="40sp"
+		    android:textColor="@color/White"
+		    android:onClick="newGame"
+		    android:text="START NEW GAME"
+		    
+		    />
+			
+	</RelativeLayout>
+	
+    <RelativeLayout 
+        android:layout_marginTop="140dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:background="@color/transparent" 
+        android:layout_centerHorizontal="true">
+    <Spinner
+    		android:id="@+id/selectMatch"
+    		android:background="@color/Grey"
+    		android:layout_width="200dp"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="15dp"
+    		android:entries="@array/matches"
+    		android:layout_centerHorizontal="true"
+    		android:prompt="@string/allmatches"
+    		android:singleLine="true"
+    		android:text="@string/allmatches"
+    		android:textColor="@color/Black"
+    		android:textSize="15sp" />
+    
+    <ListView
+        android:id="@+id/list_mygames_active"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+       
+        android:layout_centerHorizontal="true"
+        
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="10dp"
+        android:longClickable="true" />
+	
+	</RelativeLayout>
+	<RelativeLayout 
+	    android:id="@android:id/empty"
+	    android:layout_height="100dp" 
+	    android:layout_width="300dp"
+	    android:orientation="vertical"
+	    android:background="@color/White"
+	    android:layout_marginTop="340dp"
+	    android:layout_centerHorizontal="true"
+	    >
+	<TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:textColor="@color/Black"
+               android:textSize="15dp"
+               android:text="Result Empty!"/>
+	 <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="40dp"
+               
+               android:textColor="@color/Black"
+               android:textSize="12dp"
+               android:layout_marginLeft="50dp"
+               android:text="You have no games matching the filter."/>   
+	    
+	    
+	</RelativeLayout>
+	
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/banner"
+            
+            
+            />
+        
+        
+        </RelativeLayout>
+
+
+</RelativeLayout>

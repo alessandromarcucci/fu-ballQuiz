@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_game" >
+    
+    <RelativeLayout 
+	    
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+    	<!-- first player -->
+    	<RelativeLayout
+    	    android:id="@+id/game_sender"
+        	android:layout_width="150dp"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	android:layout_alignParentLeft="true" 
+        	>
+        
+        	<ImageView 
+        	    
+            	android:id="@+id/game_sender_img"
+            	android:layout_width="60dp"
+            	android:layout_height="60dp"
+            	android:layout_marginTop="15dp"
+            	android:layout_marginLeft="10dp"
+            	/>
+        	<ImageView
+        	    android:id="@+id/final_crown_sender"
+        	    android:layout_width="30dp"
+        	    android:layout_height="30dp"
+        	    
+        	    android:layout_marginLeft="30dp"/>
+        	
+        	<ImageView
+        	    android:id="@+id/game_sender_fb"
+        	    android:layout_width="20dp"
+        	    android:layout_height="20dp"
+        	    android:layout_marginTop="60dp"
+        	    android:layout_marginLeft="10dp"
+        	    
+        	    />
+        	
+        	<TextView 
+        	    android:id="@+id/game_sender_level"
+        	    android:layout_width="20dp"
+        	    android:layout_height="20dp"
+        	    android:layout_marginTop="20dp"
+        	    android:layout_marginLeft="10dp"
+        	    android:textColor="@color/White"
+        	    android:textSize="10dp"
+        	    
+        	    android:background="@drawable/red_circle"/>
+        
+        	<TextView
+            	android:id="@+id/game_sender_name"
+            	android:layout_width="wrap_content"
+           	 	android:layout_height="wrap_content"
+            	
+            	android:layout_marginLeft="70dp"
+            	android:textSize="10dp"
+            	android:layout_marginTop="40dp"
+            	android:text="scaccia.papere"
+            	android:textColor="@color/White"/>
+        	
+        	<TextView 
+        	    android:id="@+id/game_sender_club"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:textSize="7dp"
+        	    android:textColor="@color/White"
+        	    android:text="Borussia Dortmund"
+        	    android:layout_marginTop="20dp"
+        	    android:layout_marginLeft="70dp"/>
+        	
+        
+        
+        	
+        
+    	</RelativeLayout>
+    	<!-- result -->
+    	
+    		<ImageView
+    		    android:layout_width="20dp"
+    		    android:layout_height="50dp"
+    		    android:background="@drawable/versus"
+  				android:layout_toRightOf="@+id/game_sender"
+  				android:gravity="center"
+  				android:layout_marginTop="30dp"/>  		    
+    		
+    	<!-- second player -->
+    	<RelativeLayout 
+        	android:layout_width="150dp"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	android:layout_marginTop="5dp"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="20dp"
+        	
+        	>
+        	
+        	<ImageView 
+        	    
+            	android:id="@+id/game_receiver_img"
+            	android:layout_width="60dp"
+            	android:layout_height="60dp"
+            	android:layout_marginTop="15dp"
+            	android:layout_marginLeft="10dp"
+            	/>
+        	
+        	<ImageView
+        	    android:id="@+id/final_crown_receiver"
+        	    android:layout_width="30dp"
+        	    android:layout_height="30dp"
+        	    
+        	    android:layout_marginLeft="30dp"/>
+        	
+        	<ImageView
+        	    android:id="@+id/game_receiver_fb"
+        	    android:layout_width="20dp"
+        	    android:layout_height="20dp"
+        	    android:layout_marginTop="60dp"
+        	    android:layout_marginLeft="10dp"
+        	    />
+        	
+        	<TextView 
+        	    android:id="@+id/game_receiver_level"
+        	    android:layout_width="20dp"
+        	    android:layout_height="20dp"
+        	    android:layout_marginTop="20dp"
+        	    android:layout_marginLeft="10dp"
+        	    android:textColor="@color/White"
+        	    android:textSize="10dp"
+        	    
+        	    android:background="@drawable/red_circle"/>
+        
+        	<TextView
+            	android:id="@+id/game_receiver_name"
+            	android:layout_width="wrap_content"
+           	 	android:layout_height="wrap_content"
+            	
+            	android:layout_marginLeft="70dp"
+            	android:textSize="10dp"
+            	android:layout_marginTop="40dp"
+            	android:text="scaccia.papere"
+            	android:textColor="@color/White"/>
+        	
+        	<TextView 
+        	    android:id="@+id/game_receiver_club"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:textSize="7dp"
+        	    android:textColor="@color/White"
+        	    android:text="Borussia Dortmund"
+        	    android:layout_marginTop="20dp"
+        	    android:layout_marginLeft="70dp"/>
+        
+        
+    	</RelativeLayout>
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/victoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="@color/White"
+        android:text="Du hast verloren"
+        android:layout_marginTop="100dp"
+        />
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp">
+    	
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="10dp"
+                android:text="Match"
+                android:layout_centerHorizontal="true"/>
+            <ProgressBar
+        		android:id="@+id/progressMatch"
+        		android:layout_marginTop="25dp"
+        		style="?android:attr/progressBarStyleHorizontal"
+        		android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:layout_centerInParent="true"  
+        		android:indeterminate="false"
+        		android:max="48"
+        		android:progress="45"
+        		
+        		android:progressDrawable="@drawable/circular_progress_bar" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/red_circle"
+                android:layout_marginTop="17dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/textMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:layout_centerInParent="true"
+                android:textColor="@color/White"
+                android:layout_marginTop="25dp"/>
+            
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="10dp"
+                android:text="Victory"
+                android:layout_centerHorizontal="true"/>
+            <ProgressBar
+        		android:id="@+id/progressVictory"
+        		android:layout_marginTop="25dp"
+        		style="?android:attr/progressBarStyleHorizontal"
+        		android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:layout_centerInParent="true"  
+        		android:indeterminate="false"
+        		android:max="48"
+        		android:progress="45"
+        		android:progressDrawable="@drawable/circular_progress_bar" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/red_circle"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/textVictory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/White"
+                android:layout_marginTop="25dp"
+                android:layout_centerInParent="true"/>
+            
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             android:layout_marginLeft="120dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="10dp"
+                android:text="Premium"
+                android:layout_centerHorizontal="true"/>
+            <ProgressBar
+        		android:id="@+id/progressPremium"
+        		android:layout_marginTop="25dp"
+        		style="?android:attr/progressBarStyleHorizontal"
+        		android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:layout_centerInParent="true"  
+        		android:indeterminate="false"
+        		android:max="48"
+        		android:progress="45"
+        		android:progressDrawable="@drawable/circular_progress_bar" 
+        		/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/red_circle"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/textPremium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/White"
+                android:layout_marginTop="25dp"
+                android:layout_centerInParent="true"/>
+            
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             android:layout_marginLeft="180dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="10dp"
+                android:text="Opponent"
+                android:layout_centerHorizontal="true"/>
+            <ProgressBar
+        		android:id="@+id/progressOpponent"
+        		android:layout_marginTop="25dp"
+        		style="?android:attr/progressBarStyleHorizontal"
+        		android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:layout_centerInParent="true"  
+        		android:indeterminate="false"
+        		android:max="48"
+        		android:progress="45"
+        		android:progressDrawable="@drawable/circular_progress_bar" 
+        		/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/red_circle"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/textOpponent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/White"
+                android:layout_marginTop="25dp"
+                android:layout_centerInParent="true"/>
+            
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             android:layout_marginLeft="240dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="10dp"
+                android:text="Perfect"
+                android:layout_centerHorizontal="true"/>
+            <ProgressBar
+        		android:id="@+id/progressPerfect"
+        		android:layout_marginTop="25dp"
+        		style="?android:attr/progressBarStyleHorizontal"
+        		android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:layout_centerInParent="true"  
+        		android:indeterminate="false"
+        		android:max="48"
+        		android:progress="45"
+        		android:progressDrawable="@drawable/circular_progress_bar" 
+        		/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/red_circle"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/textPerfect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/White"
+                android:layout_marginTop="25dp"
+                android:layout_centerInParent="true"/>
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        	<ProgressBar
+    			
+            	android:layout_width="fill_parent"
+            	android:layout_height="30dp"
+            	android:maxHeight="20dip"
+    			android:minHeight="10dip"
+    			android:id="@+id/progress_bar"
+    			style="?android:attr/progressBarStyleHorizontal"
+    			android:layout_margin="10dp"
+    			android:max="100"
+    			android:progress="50"
+    			android:progressDrawable="@drawable/greenprogress" />
+        	<ImageView
+    			android:id="@+id/circle_back_1" 
+    			android:layout_width="50dp" 
+    			android:layout_height="50dp"
+    			android:background="@drawable/circle_back"/>
+        	
+        	<ImageView
+    			android:id="@+id/circle_one" 
+    			android:layout_width="40dp" 
+    			android:layout_height="40dp"
+    			android:layout_marginLeft="5dp"
+    			android:layout_marginTop="5dp"
+    			android:background="@drawable/circle_two"/>
+        	<TextView
+        	    android:id="@+id/currentLevel"
+        	    android:layout_width="40dp" 
+    			android:layout_height="40dp"
+    			android:layout_marginLeft="5dp"
+    			android:layout_marginTop="10dp"
+    			android:paddingLeft="7dp"
+    			android:textSize="20dp"
+    			android:textColor="@color/White"
+    			android:text="18"/>
+        	<ImageView
+    			android:id="@+id/circle_back_2" 
+    			android:layout_width="50dp" 
+    			android:layout_height="50dp"
+    			android:layout_alignParentRight="true"
+    			android:background="@drawable/circle_back"/>
+        	<ImageView
+    			android:id="@+id/circle_two" 
+    			android:layout_width="40dp" 
+    			android:layout_height="40dp"
+    			android:layout_alignParentRight="true"
+    			android:layout_marginRight="5dp"
+    			android:layout_marginTop="5dp"
+    			android:background="@drawable/circle_two"/>
+        	<TextView 
+        	    android:id="@+id/nextLevel"
+        	    android:layout_width="40dp"
+        	    android:layout_height="40dp"
+        	    android:layout_alignParentRight="true"
+        	    android:paddingLeft="2dp"
+        	    android:layout_marginTop="10dp"
+        	    android:textSize="20dp"
+        	    android:textColor="@color/White"
+        	    android:text="19"/>
+        </RelativeLayout>
+        <Button 
+            android:id="@+id/rematch"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/greenbutton"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="290dp"
+            android:textColor="@color/White"
+            android:text="REMATCH"/>
+        
+        <Button 
+            android:id="@+id/share"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/greenbutton"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="370dp"
+            android:textColor="@color/White"
+            android:text="SHARE"/>
+    
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_game" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+        
+       	<EditText 
+        	android:id="@+id/search_player"
+        	android:layout_width="200dp"
+        	android:layout_height="30dp"
+        	android:layout_marginTop="10dp"
+        	
+        	android:ems="10"
+        	android:textColor="@color/White"
+        	android:background="@color/transparent"
+        	android:layout_marginLeft="50dp"/>
+       	
+       	<Button
+       	    android:id="@+id/search_button"
+       	    android:layout_width="30dp"
+    		android:layout_height="30dp"
+    		android:background="@drawable/search_icon"
+    		android:onClick="searchUser"
+    		android:layout_marginLeft="30dp"
+    		
+    		android:layout_marginTop="10dp"
+    		/>
+    </LinearLayout>
+       	
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:layout_centerHorizontal="true" 
+    	>
+    		
+    		<ListView
+          		android:layout_width="match_parent"
+    			android:layout_centerHorizontal="true" 
+    			android:layout_height="wrap_content"
+          		android:id="@+id/list"
+          		android:fadingEdge="horizontal"
+          		android:fadingEdgeLength="10dp"
+          		android:longClickable="true"
+          		android:layout_marginLeft="20dp"
+          		android:layout_marginRight="20dp"
+          		android:background="@color/transparent"
+          		android:divider="@null"
+				android:dividerHeight="0dp">
+       		</ListView>
+    </LinearLayout>
+     
+       	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-130dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/banner"
+            android:layout_alignParentBottom="true"
+            
+            
+            />
+        
+        
+    </RelativeLayout>
+	
+	
+    
+</LinearLayout>

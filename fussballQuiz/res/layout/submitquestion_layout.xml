@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_game"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/submitTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:textSize="12dp"
+        android:text="Submit Question"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        
+        />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            
+            android:layout_marginTop="30dp"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+    
+    
+	<Spinner
+        	android:id="@+id/category_spinner"
+        	android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+        	/>
+	
+    
+   	
+   	<EditText 
+   	    android:id="@+id/deinefrage"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="80dp"
+   	    android:layout_marginTop="10dp"
+   	    android:layout_centerHorizontal="true"
+   	    android:textColor="@color/Black"
+   	    android:background="@drawable/round_background"
+	    android:hint="Deine Frage ..."
+	    android:textSize="12dp"
+	    android:paddingLeft="20dp"
+   	    
+   	    android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+   	
+   	<LinearLayout
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:orientation="horizontal"
+   	    >
+   	    <!-- <ImageView 
+   	        android:layout_width="20dp"
+   	    	android:layout_height="fill_parent"
+   	    	android:layout_marginTop="10dp"
+   	    	android:layout_centerVertical="true"
+   	    	android:background="@drawable/random_play"/> -->
+   	
+   		<EditText
+   	    	android:id="@+id/submit_correct"
+   	    	android:layout_width="fill_parent"
+   	    	android:layout_height="60dp"
+			android:layout_marginTop="10dp"
+			android:layout_centerHorizontal="true"
+			android:textSize="12dp"
+			android:textColor="@color/Black"
+			android:background="@drawable/round_background_right"
+			android:paddingLeft="20dp"
+			android:hint="Richtige Antwort"
+			android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+			
+			
+        	/>
+   		
+   		<!--  <ImageView 
+   		    android:layout_marginRight="40dp"
+   	        android:layout_width="20dp"
+   	    	android:layout_height="fill_parent"
+   	    	android:layout_marginTop="10dp"
+   	    	android:layout_alignParentRight="true"
+   	    	android:background="@drawable/random_play"/> -->
+   	
+   	</LinearLayout>
+   	
+   	<EditText
+   	    	android:id="@+id/submit_wrong1"
+   	    	android:layout_width="fill_parent"
+   	    	android:layout_height="60dp"
+			android:layout_marginTop="10dp"
+			android:layout_centerHorizontal="true"
+			android:textSize="12dp"
+			android:textColor="@color/Black"
+			android:background="@drawable/round_background"
+			android:paddingLeft="20dp"
+			android:hint="Falsche Antwort"
+			android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+   	
+   	<EditText
+   	    	android:id="@+id/submit_wrong2"
+   	    	android:layout_width="fill_parent"
+   	    	android:layout_height="60dp"
+			android:layout_marginTop="10dp"
+			android:layout_centerHorizontal="true"
+			android:textSize="12dp"
+			android:textColor="@color/Black"
+			android:background="@drawable/round_background"
+			android:paddingLeft="20dp"
+			android:hint="Falsche Antwort"
+			android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+   	<EditText
+   	    	android:id="@+id/submit_wrong3"
+   	    	android:layout_width="fill_parent"
+   	    	android:layout_height="60dp"
+			android:layout_marginTop="10dp"
+			android:layout_centerHorizontal="true"
+			android:textSize="12dp"
+			android:textColor="@color/Black"
+			android:background="@drawable/round_background"
+			android:paddingLeft="20dp"
+			android:hint="Falsche Antwort"
+			android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+   	
+   		<LinearLayout
+   		    android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+   		    android:layout_marginLeft="20dp"
+   		    android:layout_marginRight="20dp"
+   		    android:orientation="horizontal"
+   		    android:layout_marginTop="10dp">
+   		
+   		    <Button 
+   		        
+   		        android:layout_width="50dp"
+   		        android:layout_height="30dp"
+   		        android:background="@drawable/no_button"/>
+   		    <TextView
+   		        android:id="@+id/submit_text"
+   		        android:layout_width="fill_parent"
+   		        android:layout_height="fill_parent"
+   		        android:layout_marginLeft="10dp"
+   		        android:textColor="@color/White"
+   		        android:textSize="12dp"
+   		        android:paddingTop="-10dp"
+   		        android:text="I accept the AGB Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenan commodo."/>
+   		</LinearLayout>
+   		
+   	
+   	
+   	
+   	
+   	
+   
+   	
+   	<Button
+		android:id="@+id/submit_button"
+		android:layout_width="fill_parent"
+		android:layout_height="60dp"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:drawablePadding="10dip"
+		android:layout_centerInParent="true"
+		android:text="SUBMIT"
+		android:background="@drawable/greenbutton"
+		android:paddingTop="-20dp"
+		android:textColor="@color/White"
+		android:textSize="20dip"
+		android:onClick="submitQuestion" 
+		/>
+
+	</LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

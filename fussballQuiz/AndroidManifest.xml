@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.splashscreen"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    android:largeHeap="true">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="20" />
+	<uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true" >
+        <activity
+            android:name="com.example.splashscreen.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.splashscreen.Login"
+            android:theme="@style/MyTheme">
+        </activity>
+        <activity android:name="com.example.splashscreen.Lobby" 
+            android:theme="@style/MyTheme">
+        </activity>
+        <activity android:name="com.example.splashscreen.Register">
+        </activity>
+         <activity android:name="com.example.splashscreen.SearchPlayer"
+             android:windowSoftInputMode="adjustPan"
+             android:theme="@style/MyTheme">
+        </activity>
+        <activity android:name="com.example.splashscreen.DynamicListViewActivity">
+        </activity>
+        <activity android:name="com.example.splashscreen.Account"
+            android:theme="@style/MyTheme">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.splashscreen.Lobby" />
+        </activity>
+        <activity android:name="com.example.splashscreen.ProfileView">
+        </activity>
+        <activity 
+            android:name="com.example.splashscreen.Game"
+            android:theme="@style/MyTheme">
+        </activity>
+        <activity 
+            android:name="com.example.splashscreen.Question"
+            android:theme="@style/MyTheme">
+        </activity>
+        <activity 
+            android:name="com.example.splashscreen.PreMatch"
+            android:theme="@style/MyTheme">
+        </activity>
+        <activity 
+            android:name="com.example.splashscreen.Final"
+            android:theme="@style/MyTheme">
+        </activity>
+        <activity 
+            android:name="com.example.splashscreen.MyFriends"
+            android:theme="@style/MyTheme">
+        </activity>
+        <activity android:name="com.example.splashscreen.FBActivity">
+        </activity>
+                <activity android:name="com.example.splashscreen.QuestSubmit">
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id" />
+        <activity android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.example.splashscreen.FragmentContainer" android:theme="@style/MyTheme"></activity>
+        <activity android:name="com.example.splashscreen.NewGame" android:theme="@style/MyTheme"></activity>
+        <activity android:name="com.example.splashscreen.Random" android:theme="@style/MyTheme"></activity>
+        
+        <activity 
+            android:name="com.example.splashscreen.Options2" 
+            android:theme="@style/MyTheme" 
+            android:parentActivityName="com.example.splashscreen.FragmentContainer"
+            android:windowSoftInputMode="adjustPan">
+            
+        </activity>
+        <activity 
+            android:name="com.example.splashscreen.Stats"
+            android:theme="@style/MyTheme"
+            android:parentActivityName="com.example.splashscreen.FragmentContainer"></activity>
+        <activity 
+            android:name="com.example.splashscreen.MyStats"
+            android:theme="@style/MyTheme"
+            android:parentActivityName="com.example.splashscreen.Stats"></activity>
+        
+        <activity 
+            android:name="com.example.splashscreen.Ranking"
+            android:theme="@style/MyTheme"></activity>
+        <activity 
+            android:name="com.example.splashscreen.StatsFriends"
+            android:theme="@style/MyTheme"></activity>
+        <activity 
+            android:name="com.example.splashscreen.SelectClub"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name="com.example.splashscreen.ForgotLogin"
+            android:theme="@style/MyTheme"></activity>
+    </application>
+
+</manifest>

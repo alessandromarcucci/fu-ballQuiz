@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_game" >
+    
+<RelativeLayout 
+	    
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+    	<!-- first player -->
+    	<RelativeLayout
+    	    android:id="@+id/game_sender"
+        	android:layout_width="150dp"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:layout_alignParentLeft="true" 
+        	android:layout_marginLeft="5dp">
+        
+        	<ImageView 
+            	android:id="@+id/game_sender_img"
+            	android:layout_width="60dp"
+            	android:layout_height="60dp"
+            	android:layout_marginTop="15dp"
+            	android:layout_marginLeft="15dp"/>
+        	<RelativeLayout
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_toRightOf="@+id/game_sender_img">
+        	   
+        	<TextView 
+            	android:id="@+id/game_sender_club"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginTop="30dp"
+            	android:layout_marginLeft="5dp"
+            	android:textSize="10dp"
+            	android:textColor="@color/White"/>
+        	
+        	
+        	<TextView
+            	android:id="@+id/game_sender_name"
+            	android:layout_width="wrap_content"
+           	 	android:layout_height="wrap_content"
+            	android:layout_marginTop="50dp"
+            	android:layout_marginLeft="5dp"
+            	android:textSize="10dp"
+            	android:textColor="@color/White"/>
+        
+        	<RelativeLayout
+        	    android:id="@+id/answer_round_sender"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="20dp"
+        	    android:layout_below="@+id/game_sender_name">
+        	    <ImageView 
+        	        android:id="@+id/first_question_send"
+        	        android:layout_width="20dp" 
+        	        android:layout_height="15dp"
+        	        android:background="@drawable/lobby_result"/>
+        	    <ImageView
+        	        android:id="@+id/second_question_send"
+        	        android:layout_width="20dp" 
+        	        android:layout_height="15dp"
+        	        android:layout_marginLeft="25dp"
+        	        android:background="@drawable/lobby_result"/>
+ 				<ImageView
+        	        android:id="@+id/third_question_send"
+        	        android:layout_width="20dp" 
+        	        android:layout_height="15dp"
+        	        android:layout_marginLeft="50dp"
+        	        android:background="@drawable/lobby_result"/>       	    
+        	    
+        	</RelativeLayout>
+        	</RelativeLayout>
+    	</RelativeLayout>
+    	<!-- result -->
+    	
+    		<ImageView
+    		    android:layout_width="20dp"
+    		    android:layout_height="50dp"
+    		    android:background="@drawable/versus"
+  				android:layout_toRightOf="@+id/game_sender"
+  				android:gravity="center"
+  				android:layout_marginLeft="10dp"
+  				android:layout_marginTop="20dp"
+  				
+  				/>  		    
+    		
+    	<!-- second player -->
+    	<RelativeLayout
+    	    android:id="@+id/game_receiver"
+        	android:layout_width="150dp"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:layout_alignParentRight="true" 
+        	android:layout_marginRight="15dp">
+        	
+        	<ImageView 
+            	android:id="@+id/game_receiver_img"
+            	android:layout_width="60dp"
+            	android:layout_height="60dp"
+            	android:layout_marginTop="15dp"
+            	android:layout_marginLeft="5dp"/>
+        	
+        	<RelativeLayout
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_toRightOf="@+id/game_receiver_img">
+        	
+        	 
+        	<TextView 
+            	android:id="@+id/game_receiver_club"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginTop="30dp"
+            	android:layout_marginLeft="5dp"
+            	android:textSize="10dp"
+            	android:textColor="@color/White"/>
+           
+        	<TextView
+            	android:id="@+id/game_receiver_name"
+            	android:layout_width="wrap_content"
+           	 	android:layout_height="wrap_content"
+            	android:layout_marginTop="50dp"
+            	android:layout_marginLeft="5dp"
+            	android:textSize="10dp"
+            	android:textColor="@color/White"/>
+        	<RelativeLayout
+        	    android:id="@+id/answer_round_receiver"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="20dp"
+        	    android:layout_below="@+id/game_receiver_name">
+        	    <ImageView 
+        	        android:id="@+id/first_question_rec"
+        	        android:layout_width="20dp" 
+        	        android:layout_height="15dp"
+        	        android:background="@drawable/lobby_result"/>
+        	    <ImageView
+        	        android:id="@+id/second_question_rec"
+        	        android:layout_width="20dp" 
+        	        android:layout_height="15dp"
+        	        android:layout_marginLeft="25dp"
+        	        android:background="@drawable/lobby_result"/>
+ 				<ImageView
+        	        android:id="@+id/third_question_rec"
+        	        android:layout_width="20dp" 
+        	        android:layout_height="15dp"
+        	        android:layout_marginLeft="50dp"
+        	        android:background="@drawable/lobby_result"/>       	    
+        	    
+        	</RelativeLayout>
+        	</RelativeLayout>
+        
+    	</RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

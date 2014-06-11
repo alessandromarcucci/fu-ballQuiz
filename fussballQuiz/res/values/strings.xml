@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  array-string and string for splashscreen activity -->
+    
+    <string-array name="splashmessages">
+        <item>Mannschaften machen sich bereit...</item>
+        <item>Die Spieler schnüren ihre Fussballschuhe...</item>
+        <item>Die Uhr wird eingestellt...</item>
+        <item>Resen wird geschnitten...</item>
+        <item>Fans betreten das Stadion...</item>
+    </string-array>
+    
+    <!-- array-string and string for register fragment page -->
+	<string-array name="clubs_spinner">
+       <item>FC Augsburg</item>
+       <item>Hertha BSC</item>
+       <item>Eintracht Braunschweig</item>
+       <item>SV Werder Brema</item>
+       <item>Borussia Dortmund</item>
+       <item>Eintracht Frankfurt</item>
+       <item>Hamburger SV</item>
+       <item>Hannover 96</item>
+       <item>TSG 1899 Hoffenheim</item>
+       <item>Bayer 04 Leverkusen</item>
+       <item>1. FSV Mainz 05</item>
+       <item>Borussia Mönchengladbach</item>
+       <item>FC Bayern München</item>
+       <item>1. FC Nürnberg</item>
+       <item>FC Schalke 04</item>
+       <item>VfB Stuttgart</item>
+       <item>VfL Wolfsburg</item>
+   	</string-array>
+   	
+	<string name="select_club">Select Your Club</string>
+	
+	<!-- array-string and string for forgot login page -->
+	<string name="forgotlogin">Trag bitte Deine E-Mail Adresse hier ein, um dein Passwort zurückzusetzen</string> 
+	
+	
+	<!-- array_strings and strings for the stats -> profilestats page -->
+	<string-array name="array_time" >
+	    <item>All Times</item>
+	    <item>Last Year</item>
+	    <item>Last Month</item>
+	    <item>Last Week</item>
+	</string-array>
+	
+	<string-array name="array_category">
+	    <item>All Categories</item>
+	    <item>Ausl&#228;ndische Ligen</item>
+	    <item>Bundesliga</item>
+	    <item>EM &amp; WM</item>
+	    <item>Europa Cups</item>
+	    <item>Nationalmannschaften</item>
+	    <item>Sonstiges</item>
+	    <item>Fan Battle</item>
+	</string-array>
+	
+	<string name="selectTime">select the time</string>
+	<string name="selectCategory">select the category</string>
+   
+   <string name="action_settings">Settings</string>
+   <string name="username">Email / Username</string>
+   <string name="password">Password</string>
+   <string name="Login">Login</string>
+   <string name="attempts">Attempts Left:</string>
+   <string name="user"></string>
+   <string name="Register">Register</string>
+   <string name="register_username">username</string>
+   <string name="pickImage">upload an image</string>
+   <string name="confirmation">Submit</string>
+   <string name="register_email">email</string>
+   <string name="register_password">password</string>
+   
+   <string name="random_player">Random Player</string>
+   <string name="search_player">Search Player</string>
+   <string name="facebook_challenge">Facebook Challenge</string>
+   <string name="email_invite">E-Mail Invite</string>
+   <string name="new_game">New Game</string>
+   <string name="my_games">My Games</string>
+   <string name="stats">Stats</string>
+   <string name="options">Options</string>
+   <string name="forgotpassword">Forgot Password?</string>
+   <string name="or">OR</string>
+   <string name="Enter">Enter</string>
+   <string name="searchuser">Search</string>
+   <string name="theme">Theme</string>
+   <string name="submitquestion">Submit a Question</string>
+   <string name="help">Help</string>
+   <string name="premium">PREMIUM</string>
+   <string name="about">About</string>
+   <string name="mystats">My Stats</string>
+   <string name="myfriends">My Friends</string>
+   <string name="topbundesliga">Top Bundesliga</string>
+   <string name="topinternational">Top International</string>
+   <string name="topgeneral">Top General</string>
+   <string name="account">Account</string>
+   <string name="sounds">Sounds</string>
+   <string name="accountusername">Username</string>
+   <string name="accountconfirm">Confirm</string>
+   <string name="accountlogout">Logout</string>
+   <string name="addfriend">Add Friend</string>
+   <string name="statsprofile">Stats</string>
+   <string name="alltime">All Time</string>
+   <string name="allclubs">All Clubs</string>
+   <string name="allmatches">All</string>
+   <string name="play">Play</string>
+   <string name="ranking">Ranking</string>
+   
+   
+   
+  
+    <string name="app_name">FootballQuiz</string>
+    <string name="enter">Log in to Facebook</string>
+   
+   <string-array name="time">
+       <item>All Time</item>
+       <item>Last Week</item>
+       <item>Last Month</item>
+       <item>Last Year</item>
+   </string-array>
+   
+   <string-array name="clubs">
+       <item>All Clubs</item>
+       <item>Bundesliga</item>
+       <item>Serie A</item>
+       <item>Liga</item>
+   </string-array>
+   
+   <string-array name="matches">
+       <item>All</item>
+       <item>My Turn</item>
+       <item>Opponent Turn</item>
+       <item>New Games</item>
+   </string-array>
+   <string name="app_id">1462096097358215</string>
+   
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    
+    
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+   	
+   	<!--  about page  -->
+    
+    <string name="feedback"><u>Feedback geben</u></string>
+    <string name="version">Version 4.7.2 ©Pokermania GmbH</string>
+    <string name="teilen">Teilen Sie uns Ihre Meinung mit</string>
+    <string name="anbieter">Anbieter</string>
+    <string name="pokermania">Pokermania GmbH \nBonner Str. 271, 50968 Köln, Deutschland \nwww.pokermania.org</string>
+    <string name="haftungshinweis">Haftungshinweis</string>
+    <string name="haftung">Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich anderen Betreiber verantwortlich.</string>
+	<string name="kontaktdaten">Kontaktdaten</string>
+
+	<!-- premium page -->
+	
+	<string name="premiumtext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. \n\n\nUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. \n\n\nDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. \n\n\nNam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</string>
+</resources>

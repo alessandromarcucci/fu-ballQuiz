@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:background="@color/transparent" 
+        android:layout_centerHorizontal="true">
+    
+    
+   
+        <ListView
+        android:id="@+id/list_mygames2"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        
+       
+        android:layout_centerHorizontal="true"
+        android:divider="@null"
+				android:dividerHeight="0dp"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="10dp"
+        android:longClickable="true" />
+        
+	
+	</RelativeLayout>
+	<RelativeLayout 
+	    android:id="@android:id/empty"
+	    android:layout_height="100dp" 
+	    android:layout_width="320dp"
+	    android:orientation="vertical"
+	    android:background="@color/White"
+	    android:layout_marginTop="20dp"
+	    android:layout_centerHorizontal="true"
+	    
+	    >
+	<TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:textColor="@color/Black"
+               android:textSize="15dp"
+               android:text="Result Empty!"/>
+	 <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="40dp"
+               
+               android:textColor="@color/Black"
+               android:textSize="12dp"
+               android:layout_marginLeft="50dp"
+               android:text="You have no games matching the filter."/>   
+	    
+	    
+	</RelativeLayout>
+
+</LinearLayout>

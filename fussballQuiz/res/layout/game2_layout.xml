@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_game" >
+	
+	<RelativeLayout 
+	    
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    	<!-- first player -->
+    	<RelativeLayout
+    	    android:id="@+id/game_sender"
+        	android:layout_width="120dp"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	android:layout_alignParentLeft="true" 
+        	android:layout_marginLeft="30dp">
+        
+        	<ImageView 
+            	android:id="@+id/game_sender_img"
+            	android:layout_width="70dp"
+            	android:layout_height="70dp"
+            	android:layout_marginTop="15dp"
+            	android:layout_marginLeft="15dp"/>
+        
+        	<TextView
+            	android:id="@+id/game_sender_name"
+            	android:layout_width="wrap_content"
+           	 	android:layout_height="wrap_content"
+            	android:layout_marginTop="10dp"
+            	android:layout_marginLeft="25dp"
+            	android:textSize="10dp"
+            	android:textColor="@color/White"/>
+        
+        	<TextView 
+            	android:id="@+id/game_sender_level"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginTop="5dp"
+            	android:layout_marginLeft="25dp"
+            	android:textSize="10dp"
+            	android:textColor="@color/White"/>
+        
+    	</RelativeLayout>
+    	<!-- result -->
+    	
+    		<ImageView
+    		    android:layout_width="20dp"
+    		    android:layout_height="50dp"
+    		    android:background="@drawable/versus"
+  				android:layout_toRightOf="@+id/game_sender"
+  				android:gravity="center"
+  				android:layout_marginTop="30dp"/>  		    
+    		
+    	<!-- second player -->
+    	<RelativeLayout 
+        	android:layout_width="120dp"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	android:layout_marginTop="5dp"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="50dp"
+        	>
+        	
+        	<ImageView 
+            	android:id="@+id/game_receiver_img"
+            	android:layout_width="70dp"
+            	android:layout_height="70dp"
+            	android:layout_marginTop="10dp"
+            	android:layout_marginLeft="15dp"/>
+        	
+        	<TextView
+            	android:id="@+id/game_receiver_name"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_marginTop="10dp"
+            	android:layout_marginLeft="25dp"
+            	android:textSize="10dp"
+            	android:textColor="@color/White"/>
+        
+        	<TextView 
+            	android:id="@+id/game_receiver_level"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_marginTop="5dp"
+            	android:layout_marginLeft="25dp"
+            	android:textColor="@color/White"
+            	android:textSize="10dp"/>
+        
+    	</RelativeLayout>
+    </RelativeLayout>
+    
+	
+</RelativeLayout>

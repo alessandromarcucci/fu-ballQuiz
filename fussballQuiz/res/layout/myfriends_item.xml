@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/transparent" >
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+    
+    
+    
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        >
+    <com.example.splashscreen.RoundedImageView
+        android:id="@+id/friend_img"
+		android:layout_width= "55dp"
+		android:layout_height= "55dp"
+		android:gravity="center"
+		android:layout_centerInParent="true"
+		android:background="@drawable/player_image"
+		android:scaleType="fitCenter"
+		/>
+    
+    <ImageView 
+        android:id="@+id/round_active"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:background="@drawable/avatar_circle"
+        android:layout_centerInParent="true"
+        
+       
+        />
+    <ProgressBar
+        		android:id="@+id/progress_user"
+        		android:layout_marginTop="25dp"
+        		style="?android:attr/progressBarStyleHorizontal"
+        		android:layout_width="80dp"
+        		android:layout_height="80dp"
+        		android:layout_centerInParent="true"  
+        		android:indeterminate="false"
+        		android:max="100"
+        		android:progress="48"
+        		
+        		android:progressDrawable="@drawable/progress_bar_user_low_level" />
+    <ImageView 
+        android:id="@+id/friend_fb"
+        android:layout_width="20dp" 
+        android:layout_height="20dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="10dp"/>
+    <RelativeLayout
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/red_circle">
+        <TextView 
+        android:id="@+id/friend_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="9sp"
+        android:textColor="@color/White"
+        android:text="13"/>
+        
+    </RelativeLayout>
+    
+    </RelativeLayout>
+    
+    	<RelativeLayout 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="100dp"
+    	    android:orientation="vertical"
+    	    android:layout_marginLeft="85dp"
+    	    
+    	    android:background="@color/transparent">
+    	    
+    	    <TextView
+    	        android:id="@+id/friend_club"
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="wrap_content"
+    	    	android:layout_marginTop="25dp"
+    	    	android:textSize="9dp"
+    	    	android:textColor="@color/White"
+    	    	android:text="1899 Hoffenheim"/>
+    	    <TextView 
+    	        android:id="@+id/friend_name"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_marginTop="40dp"
+    	        android:textSize="13dp"
+    	        android:textColor="@color/White"
+    	        android:text="Peterlustig"/>
+    	</RelativeLayout>
+    
+	
+	
+	<RelativeLayout 
+	    android:layout_width="60dp"
+	    android:layout_height="70dp"
+	    android:orientation="vertical"
+	    android:layout_marginLeft="70dp"
+	     android:layout_alignParentRight="true"
+	     android:layout_marginRight="20dp"
+	     android:layout_centerVertical="true">
+	    <Button 
+	        android:id="@+id/challengeFriends"
+	        android:layout_width="80dp"
+	        android:layout_height="40dp"
+	         android:textSize="10dp"
+	         android:layout_centerVertical="true"
+	         android:background="@drawable/friend_new_game"
+	         android:layout_alignParentRight="true"
+	    />
+	</RelativeLayout>
+	<TextView 
+	    android:id="@+id/friendPosition"
+	    android:layout_width="0dp" 
+	    android:layout_height="0dp"/>
+	</RelativeLayout>
+</LinearLayout>
